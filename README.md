@@ -12,3 +12,6 @@ Because almost each vendor will have a different base frequency, and I expect mo
 More details on how these signals are encoded can be found on the [LineCoding](https://github.com/sui77/rc-switch/wiki/KnowHow_LineCoding) wiki page of the rc-switch project.
 
 The samples provided are created using the rc-switch project, using the 6 supported protocols. These samples should be read correctly by the decoder without changing any settings, except for the last (6) for which the polarity must be reversed.
+
+Screenshot of the 'protocol 1' sample:
+![Pulseview screenshot rc_switch decoder](screenshot_01.png)
