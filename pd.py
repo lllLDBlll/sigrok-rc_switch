@@ -27,6 +27,7 @@ class Decoder(srd.Decoder):
     license = 'gplv2+'
     inputs = ['logic']
     outputs = ['rc_switch']
+    tags = ['Encoding']
     channels = (
         {'id': 'rc', 'name': 'RC', 'desc': 'RC Input'},
     )
@@ -52,6 +53,9 @@ class Decoder(srd.Decoder):
     )
 
     def __init__(self):
+        self.reset()
+
+    def reset(self):
         self.bit_start = 0
         self.last_edge = 0
         self.last_length = 0
