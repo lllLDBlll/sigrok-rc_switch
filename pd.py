@@ -42,13 +42,13 @@ class Decoder(srd.Decoder):
         ('tri', 'Tri'),
         ('data', 'Data'),
         ('timing', 'Timing'),
-        ('warnings', 'Warnings'),
+        ('warning', 'Warnings'),
     )
     annotation_rows = (
         ('bits', 'Bits', (0,)),
         ('tris', 'Tris', (1,)),
-        ('data', 'Data', (2,)),
-        ('timing', 'Timings', (3,)),
+        ('datas', 'Data', (2,)),
+        ('timings', 'Timings', (3,)),
         ('warnings', 'Warnings', (4,)),
     )
 
